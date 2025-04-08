@@ -3,6 +3,12 @@
 @theme {
     --breakpoint-3xl: 1800px;
     --breakpoint-xxs: 450px;
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --font-weight-extrabold: 800;
+    --tracking-wide: 0.025em;
+    --radius-lg: 0.5rem;
 }
 
 @layer components {

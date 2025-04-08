@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-3xl: 1800px;
+    --breakpoint-xxs: 450px;
+}
+
 @layer components {
     .hamburger.close {
         div:first-child {

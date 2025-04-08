@@ -16,7 +16,7 @@
     </a>
     <nav class="flex justify-between items-center order-[-1] lg:order-0 ">
         <ul
-                class="fixed top-0 left-0 h-screen w-screen nav bg-rose-700/90 flex flex-col pt-10 justify-center items-center gap-5 uppercase transition-transform duration-300 ease-in-out lg:static lg:scale-y-100 lg:bg-transparent lg:flex-row lg:w-auto lg:h-auto lg:pt-0 z-50">
+                class="fixed top-0 left-0 h-screen w-screen nav bg-rose-700/90 flex flex-col pt-10 justify-center items-center gap-5 uppercase transition-transform duration-300 ease-in-out text-2xl sm:*:text-4xl *:my-8 lg:*:text-lg lg:static lg:scale-y-100 lg:bg-transparent lg:flex-row lg:w-auto lg:h-auto lg:pt-0 z-50">
             <li
                     class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition">
                 <a href = "uber-uns.html">Uber uns</a>
@@ -60,24 +60,30 @@
     </div>
 </header>
 <main>
-    <section class="flex flex-col md:flex-row-reverse px-3 lg:px-10 ">
-        <div class="flex container ">
-            <figure >
-                <img class=" " src="./assets/img/Deckenhohe-Schiebetür.png"
-                     alt="Deckenhohe schiebetür">
-            </figure>
+    <section class="grid grid-cols-1 md:grid-cols-5 gap-6 p-6 md:p-12 items-center">
+        <!-- Tekstovni blok -->
+        <div class="md:col-span-2 text-center md:text-left">
+            <h1 class="text-4xl font-light leading-none md:text-6xl lg:text-8xl">nuss</h1>
+            <h2 class="text-6xl font-extrabold leading-none md:text-8xl lg:text-[10rem]">
+                BAUM<span class="text-4xl md:text-6xl lg:text-8xl">.</span>
+            </h2>
+
+            <!-- Meni spodaj -->
+            <div class="grid grid-cols-4 gap-4 mt-6 text-sm uppercase tracking-wide text-gray-700">
+                <p>Türen</p>
+                <p>Stiegen</p>
+                <p>Parkett</p>
+                <p>Terassen</p>
+            </div>
         </div>
-        <div class="flex flex-col justify-center items-center container">
-            <h1 class="pt-2 font-semibold text-2xl ">nuss</h1>
-            <span class=" pt-2 -mt-4 mb-4 uppercase font-bold  text-4xl">BAUM.</span>
-        <div class="flex *:px-2 uppercase ">
-            <p>Turen</p>
-            <p>Stiegen</p>
-            <p>Parkett</p>
-            <p>Teraseen</p>
-        </div>
+
+        <!-- Slika -->
+        <div class="md:col-span-3">
+            <img src="./assets/img/Deckenhohe-Schiebetür.png" alt="Deckenhohe Schiebetür" class="w-full h-auto rounded-lg shadow-md">
         </div>
     </section>
+
+
 </main>
 <script src="app.js"></script>
 </body>

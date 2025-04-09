@@ -18,6 +18,12 @@
     --radius-lg: 0.5rem;
 }
 
+@layer base {
+
+    img {
+        @apply  h-full object-cover;
+    }
+}
 @layer components {
     .hamburger.close {
         div:first-child {

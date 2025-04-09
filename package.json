@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "start": "react-scripts start",
+    "build-css": "tailwindcss -i style.css -o output.css",
+    "watch-css": "tailwindcss -i style.css -o output.css --watch",
+    "dev": "concurrently \"npm run watch-css\" \"npm start\""
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.1",
     "tailwindcss": "^4.1.1"

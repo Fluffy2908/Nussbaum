@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-3xl: 1800px;
+
+    --breakpoint-3xl: 120rem;
     --breakpoint-xxs: 450px;
     --color-gray-700: oklch(37.3% 0.034 259.733);
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --text-10xl: 10rem;
+    --text-10xl--line-height: 1.3;
+    --text-12xl: 15rem;
+    --text-12xl--line-height: 1.5;
     --font-weight-extrabold: 800;
     --tracking-wide: 0.025em;
     --radius-lg: 0.5rem;

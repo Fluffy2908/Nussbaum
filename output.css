@@ -259,8 +259,14 @@
   .row-end-6 {
     grid-row-end: 6;
   }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .my-13 {
     margin-block: calc(var(--spacing) * 13);
@@ -273,6 +279,12 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .-ml-5 {
     margin-left: calc(var(--spacing) * -5);
@@ -292,6 +304,12 @@
   .size-7 {
     width: calc(var(--spacing) * 7);
     height: calc(var(--spacing) * 7);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
   }
   .h-\[2px\] {
     height: 2px;
@@ -347,6 +365,9 @@
   }
   .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
   .grid-rows-6 {
     grid-template-rows: repeat(6, minmax(0, 1fr));
@@ -429,6 +450,15 @@
   .stroke-current {
     stroke: currentcolor;
   }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-scale-down {
+    object-fit: scale-down;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -440,6 +470,9 @@
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -761,6 +794,16 @@
       display: grid;
     }
   }
+  .md\:h-auto {
+    @media (width >= 48rem) {
+      height: auto;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
   .md\:-translate-y-15 {
     @media (width >= 48rem) {
       --tw-translate-y: calc(var(--spacing) * -15);
@@ -815,6 +858,11 @@
   .md\:place-self-start {
     @media (width >= 48rem) {
       place-self: start;
+    }
+  }
+  .md\:object-cover {
+    @media (width >= 48rem) {
+      object-fit: cover;
     }
   }
   .md\:pb-0 {

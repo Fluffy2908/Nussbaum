@@ -1026,6 +1026,12 @@
   .z-50 {
     z-index: 50;
   }
+  .order-1 {
+    order: 1;
+  }
+  .order-\[-1\] {
+    order: -1;
+  }
   .container {
     width: 100%;
     @media (width >= 450px) {
@@ -1767,6 +1773,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -2082,6 +2091,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
   }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
@@ -2533,6 +2545,16 @@
   .\*\:my-8 {
     :is(& > *) {
       margin-block: calc(var(--spacing) * 8);
+    }
+  }
+  .group-hover\:scale-130 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 130%;
+        --tw-scale-y: 130%;
+        --tw-scale-z: 130%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .group-hover\:bg-rose-700 {
@@ -3287,12 +3309,31 @@
   img {
     height: 100%;
     object-fit: cover;
-    @media (width >= 48rem) {
-      border-radius: var(--radius-sm);
-    }
   }
 }
 @layer components {
+  .before {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
+  .after {
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+    &::after {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
   .hamburger.close {
     div:first-child {
       --tw-translate-y: calc(var(--spacing) * 2);
@@ -3927,6 +3968,11 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -3987,6 +4033,7 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-content: "";
     }
   }
 }

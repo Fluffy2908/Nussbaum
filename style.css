@@ -23,10 +23,17 @@
 @layer base {
 
     img {
-        @apply  md:rounded-sm h-full object-cover;
+        @apply   h-full object-cover;
     }
 }
 @layer components {
+    .before {
+        @apply before:absolute before:content-[''];
+    }
+
+    .after {
+        @apply after:absolute after:content-[''];
+    }
     .hamburger.close {
         div:first-child {
             @apply rotate-45 translate-y-2;

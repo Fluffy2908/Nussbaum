@@ -10,57 +10,116 @@
 </head>
 <body class="relative min-h-screen">
 <span class="absolute left-1/4 h-full w-px bg-rose-700 "></span>
-<header class="flex bg-white h-[78px]  justify-between items-center px-3 lg:px-10">
-    <a href = "index.html">
-        <div class="hidden flex items-center w-2/4 mx-auto text-2xl font-bold uppercase tracking-wide text-rose-700">
-            nuss<span class="text-black">Baum</span>
-        </div>
-    </a>
-    <nav class="flex justify-between items-center order-[-1] lg:order-0 ">
-        <ul
-                class="fixed top-0 left-0 h-screen w-screen nav bg-rose-700/90 flex flex-col pt-10 justify-center items-center gap-10 uppercase transition-transform duration-300 ease-in-out text-2xl sm:*:text-4xl *:my-8 lg:*:text-lg lg:static lg:scale-y-100 lg:bg-transparent lg:flex-row lg:w-auto lg:h-auto lg:pt-0 z-50 active:text-rose-700">
-            <li
-                    class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition">
-                <a href = "index.html">Uber uns</a>
-            </li>
-            <li
-                    class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition">
-                <a href = "loft-turen.html">Loft Turen</a>
-            </li>
-            <li
-                    class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition">
-                <a href = "zargenlos-turen.html">Zargenlos Turen</a>
-            </li>
-            <li
-                    class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition">
-                <a href = "kontakt.html">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+<header class="relative h-screen w-full overflow-hidden">
 
-    <div class ="flex items-center space-x-2 lg:space-x-4 ">
-        <a class="hover:text-rose-700 hover:scale-120 transition hidden sm:block" href="tel:+386000000">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor" class="size-7 stroke-current">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
-        </a>
-        <a class="hover:text-rose-700 hover:scale-120 transition hidden sm:block" href = "">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor" class="size-7 stroke-current">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
-        </a>
-        <div class="text-xl uppercase cursor-pointer hover:text-rose-700 hover:scale-120 transition">
-            EN
+    <!-- ✅ Tvoj carousel kot ozadje -->
+    <div id="default-carousel" class="absolute inset-0 w-full h-full z-0" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/miraquadra_4B_stil%20nordico.jpg"
+                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                     alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/MITA%2010V%20E%20MIQUATTRO%204B%20LACCATO%20BIANCO.jpg"
+                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/gdesigner_Composizione%2015.jpg"
+                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/milano-ture-2.jpg"
+                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/Poema_Composizione%2011%20incassata.jpg"
+                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
         </div>
+
+        <!-- Indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+        <!-- Controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+        </button>
     </div>
-    <div class="hamburger group w-8 fixed flex flex-col gap-y-1.5 justify-center items-center cursor-pointer z-50 lg:hidden ">
-        <div class="h-[2px] rounded-sm w-full bg-black  transition-transform"></div>
-        <div class="h-[2px] rounded-sm w-2/4  bg-black group-hover:bg-rose-700 transition-opacity "></div>
-        <div class="h-[2px] rounded-sm w-full bg-black  transition-transform"></div>
+
+    <!-- ✅ Navigacija in vsebina (tvoja obstoječa) -->
+    <div class="relative z-50 flex justify-between items-center px-3 lg:px-10 py-4">
+        <a href="index.html">
+            <div class="hidden lg:flex items-center text-2xl font-bold uppercase tracking-wide text-rose-700">
+                nuss<span class="text-black">Baum</span>
+            </div>
+        </a>
+
+        <nav class="flex justify-between items-center">
+            <ul class="fixed top-0 left-0 h-screen w-screen nav bg-rose-700/90 flex flex-col pt-10 justify-center items-center gap-10 uppercase transition-transform duration-300 ease-in-out text-2xl sm:*:text-4xl *:my-8 lg:*:text-lg lg:static lg:scale-y-100 lg:bg-transparent lg:flex-row lg:w-auto lg:h-auto lg:pt-0 z-50 active:text-rose-700">
+                <li class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition"><a href="index.html">Uber uns</a></li>
+                <li class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition"><a href="loft-turen.html">Loft Turen</a></li>
+                <li class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition"><a href="zargenlos-turen.html">Zargenlos Turen</a></li>
+                <li class="hover:text-white lg:hover:text-rose-700 hover:scale-120 transition"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center space-x-2 lg:space-x-4">
+            <a class="hover:text-rose-700 hover:scale-120 transition hidden sm:block" href="tel:+386000000">
+                <!-- Telefon ikon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="size-7 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+            </a>
+            <a class="hover:text-rose-700 hover:scale-120 transition hidden sm:block" href="">
+                <!-- Email ikon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="size-7 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+            </a>
+            <div class="text-xl uppercase cursor-pointer hover:text-rose-700 hover:scale-120 transition">EN</div>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger group w-8 fixed flex flex-col gap-y-1.5 justify-center items-center cursor-pointer z-50 lg:hidden">
+            <div class="h-[2px] rounded-sm w-full bg-black transition-transform"></div>
+            <div class="h-[2px] rounded-sm w-2/4 bg-black group-hover:bg-rose-700 transition-opacity"></div>
+            <div class="h-[2px] rounded-sm w-full bg-black transition-transform"></div>
+        </div>
     </div>
 </header>
+
+
+
 <main>
     <section class="grid grid-cols-1 md:grid-cols-5 items-center ">
         <div class="md:col-span-3 z-1 ">
@@ -147,5 +206,6 @@
     </section>
 </main>
 <script src="app.js"></script>
+<script src="../dist/node_modules/flowbite/dist/flowbite.min.css"></script>
 </body>
 </html>

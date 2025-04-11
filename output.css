@@ -3196,6 +3196,9 @@
   img {
     height: 100%;
     object-fit: cover;
+    @media (width >= 40rem) {
+      object-fit: contain;
+    }
   }
 }
 @layer components {

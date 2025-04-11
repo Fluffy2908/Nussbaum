@@ -2,6 +2,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build-css": "tailwindcss -i style.css -o output.css",
+    "build-flowbite": "tailwindcss -i ./node_modules/flowbite.css -o ./node_modules/flowbite/dist/flowbite.min.css",
     "watch-css": "tailwindcss -i style.css -o output.css --watch",
     "dev": "concurrently \"npm run watch-css\" \"npm start\""
   },

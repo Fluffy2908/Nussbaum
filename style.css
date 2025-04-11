@@ -1,7 +1,8 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default.css";
 @plugin "flowbite/plugin";
-@source "./node_modules//flowbite/";
+@source "./node_modules/flowbite";
+
 @theme {
 
     --breakpoint-3xl: 120rem;

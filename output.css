@@ -111,6 +111,7 @@
     --color-pink-800: #9D174D;
     --color-pink-900: #831843;
     --color-rose-700: oklch(51.4% 0.222 16.935);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-gray-50: #F9FAFB;
     --color-gray-100: #F3F4F6;
     --color-gray-200: #E5E7EB;
@@ -2109,6 +2110,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-rose-700) 90%, transparent);
     }
+  }
+  .bg-slate-700 {
+    background-color: var(--color-slate-700);
   }
   .bg-transparent {
     background-color: transparent;

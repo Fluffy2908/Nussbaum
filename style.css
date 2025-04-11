@@ -24,7 +24,7 @@
 @layer base {
 
     img {
-        @apply   h-full sm:object-contain object-cover;
+        @apply   h-full sm:object-scale-down object-cover;
     }
 }
 @layer components {

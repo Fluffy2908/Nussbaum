@@ -3196,9 +3196,6 @@
   img {
     height: 100%;
     object-fit: cover;
-    @media (width >= 40rem) {
-      object-fit: scale-down;
-    }
   }
 }
 @layer components {
